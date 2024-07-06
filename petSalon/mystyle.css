@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+h2{
+    text-align: center;
+}
+/*utilities*/
+.container{
+    width: 80%;
+    margin:1rem auto;
+}
+/*header*/
+.site-init{
+    background-color: rgba(241, 238, 55, 0.8);
+    padding: 20px;
+    height: 70%;
+}
+.menu-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+.menu a{
+    color: black;
+    font-weight: bold;
+    margin-right: 1rem;
+    border-left: 1px solid black;
+    padding-left: 1rem;
+}
+.menu a:hover{
+    border-left: 3px solid black;
+    text-shadow: 1px 1px white;
+}
+.header-info-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 1rem;
+}
+
+.header-img {
+    max-width: 70%;
+    height: auto;
+}
+.header-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*form*/
+.form-container{
+    background-color: #dedede;
+    height: 30vh;
+    width: 60%;
+    margin: 1rem auto;
+    border-radius: 1rem;
+}
+
+/*notification*/
+.alert-error{
+    background-color: red;
+}
+
+/*petcards*/
+#petDiv{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+.petCard{
+    background-color: #dedede;
+    padding: 1rem;
+}

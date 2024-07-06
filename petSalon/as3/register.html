@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register Pet - The Fashion Pet Salon</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+<body>
+    <div class="container">
+        <header class="site-init">
+            <div class="menu-bar">
+                <div class="header-info">
+                    <div class="brand-info">
+                        <h1>The Fashion Pet</h1>
+                        <p>Your pet's second home</p>
+                    </div>
+                    <nav class="menu">
+                        <a href="index.html">Home</a>
+                        <a href="register.html">Register</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section>
+            <h2>Register New Pet</h2>
+            <form id="petForm" class="form-container">
+                <div class="form-group">
+                    <label for="name">Pet Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="" selected disabled>- Select Gender -</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="breed">Breed:</label>
+                    <input type="text" id="breed" name="breed" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service:</label>
+                    <select id="service" name="service" required>
+                        <option value="" selected disabled>- Select Service -</option>
+                        <option value="Bath and Haircut">Bath and Haircut</option>
+                        <option value="Dental/Oral Hygiene">Dental/Oral Hygiene</option>
+                        <option value="Nail Trim">Nail Trim</option>
+                        <option value="Vaccination">Vaccination</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="type">Type:</label>
+                    <select id="type" name="type" required>
+                        <option value="" selected disabled>- Select Animal Type -</option>
+                        <option value="Dog">Dog</option>
+                        <option value="Cat">Cat</option>
+                        <option value="Rodent">Rodent</option>
+                        <option value="Rabbit">Rabbit</option>
+                    </select>
+                </div>
+                <button type="submit">Register Pet</button>
+            </form>
+        </section>
+    </div>
+    <script src="/as3/scripts/register.js"></script>
+</body>
+</html>

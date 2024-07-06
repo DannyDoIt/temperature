@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="mystyle.css"> 
+</head>
+<body>
+    <header class="site-init">
+        <div class="menu-bar">
+            <h1>The Fashion Pet</h1>
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="register.html">Register</a>
+                <a href="services.html">Services</a>
+            </nav>
+        </div>
+        <div class="header-info-container">
+            <div class="text-content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur, laboriosam maiores adipisci commodi vero atque ea quae aut quas necessitatibus amet, ducimus possimus repudiandae voluptatem expedita modi illum nam minima.</p>
+            </div>
+            <div class="image-content">
+                <img class="header-img" src="img/pixie.jpg" alt="doggo">
+            </div>
+    </header>
+    <main>
+        <h2>Register a new pet</h2>
+        <div class="form-container">
+            <div class="input-control">
+                <label>Name:*</label>
+                <input type="text" id="txtName">
+            </div>
+            <div class="input-control">
+                <label>Age:</label>
+                <input type="number" id="txtAge">
+            </div>
+            <div class="input-control">
+                <label>Gender:</label>
+                <input type="text" id="txtGender">
+            </div>
+            <div class="input-control">
+                <label>Service:*</label>
+                <select id="txtService" >
+                    <option value="" selected disabled>-- Select an option --</option>
+                    <option value="Grooming">Grooming</option>
+                    <option value="Vaccines">Vaccines</option>
+                </select>
+            </div>
+
+            <div class="btn-container">
+                <button class="btn btn-primary" onclick="register();">Register</button>
+            </div>
+        </div>
+        <section class="container">
+            <h2>Registered Pets</h2>
+            <div class="info">
+                <p>Total = <span id="total">1000</span></p>
+            </div>
+            <div id="petDiv">
+
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody id="petTable">
+                    <tr>
+                        <td>Test</td>
+                        <td>99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <section></section>
+
+    <script src="./scripts/register.js"></script>
+</body>
+</html>
