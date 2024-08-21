@@ -34,3 +34,11 @@ class PostDeleteView(DeleteView):
 
     def get_success_url(self):
         return reverse_lazy('list')
+
+class DraftListView(ListView):
+    model = Post
+    template_name = 'posts/drafts.html'
+    context_object_name = 'posts'
+
+    def get_queryset(self):
+        return Post.objects.filter(status='draft')

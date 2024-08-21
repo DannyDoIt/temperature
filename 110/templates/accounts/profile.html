@@ -1,8 +1,13 @@
 {% extends 'base.html' %}
 
-{% block title %}Profile{% endblock title %}
+{% block title %}Profile{% endblock %}
 
 {% block content %}
-<h1>Profile</h1>
-<p>Welcome to your profile page, {{ user.username }}.</p>
-{% endblock content %}
+    <h2>Profile</h2>
+    <p>Welcome to your profile page, {{ user.username }}.</p>
+    <ul>
+    <li><a href="{% url 'login' %}">Log In</a></li>
+    <li><a href="{% url 'password_change' %}">Change Password</a></li>
+    <li><a href="{% url 'logout' %}">Log Out</a></li>
+    </ul>
+{% endblock %}

@@ -4,13 +4,19 @@
 
 {% block content %}
 <h2>All Posts</h2>
-<a href="{% url 'post_create' %}" class="btn btn-primary">Create New Post</a>
+<div style="margin-bottom: 15px;">
+    <a href="{% url 'new' %}" class="btn btn-primary">Create New Post</a>
+    <a href="{% url 'drafts' %}" class="btn btn-secondary">View Drafts</a>
+</div>
 <ul>
-    {% for post in object_list %}
+    {% for post in posts %}
     <li>
-        <a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a>
-        <a href="{% url 'post_edit' post.pk %}" class="btn btn-secondary">Edit</a>
-        <a href="{% url 'post_delete' post.pk %}" class="btn btn-danger">Delete</a>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.subtitle }}</p>
+        <p>{{ post.content }}</p>
+        <a href="{% url 'edit' post.pk %}" class="btn btn-secondary">Edit</a>
+        <a href="{% url 'delete' post.pk %}" class="btn btn-danger">Delete</a>
+        <a href="{% url 'detail' post.pk %}">Continue reading...</a>
     </li>
     {% endfor %}
 </ul>
